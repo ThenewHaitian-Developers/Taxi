@@ -30,6 +30,8 @@ android {
 
 dependencies {
 
+    // Implemnentation paypal
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
     //noinspection GradleCompatible
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'

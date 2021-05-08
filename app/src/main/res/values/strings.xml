@@ -1,7 +1,7 @@
 <resources>
-  <string name="app_name">Taxi_Services</string>
-  <string name="title_activity_home_maps">Map</string>
-  <string name="style_json">[
+    <string name="app_name">Taxi_Services</string>
+    <string name="title_activity_home_maps">Map</string>
+    <string name="style_json">[
   {
     \"elementType\": \"geometry\",
     \"stylers\": [
@@ -216,7 +216,7 @@
     ]
   }
 ]</string>
-  <string name="title_activity_select_driver" translatable="false">SelectDriver</string>
-  <string name="Taxi_Services">Taxi_services</string>
+    <string name="title_activity_select_driver" translatable="false">SelectDriver</string>
+    <string name="Taxi_Services">Taxi_services</string>
     <string name="appbar_scrolling_view_behavior">appbar_scrolling_view_behavior</string>
 </resources>
