@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_on_boarding"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/space20"
+    android:paddingBottom="@dimen/space20"
+    tools:context="com.uiresource.Taxi_Services.OnBoarding">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/m_left_right"
+        android:layout_marginRight="@dimen/m_left_right"
+        android:isScrollContainer="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_signup"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="#201D1D"
+            android:text="sign up"
+            android:textColor="#F4EFEF"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/bt_login"
+            style="@style/ButtonWhite"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="log in"
+            android:textColor="#201E1E" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_above="@id/ll_bottom"
+        android:layout_marginBottom="197dp"
+        android:background="@drawable/ayiti"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom2"
+        android:layout_width="371dp"
+        android:layout_height="122dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/m_left_right"
+        android:layout_marginRight="@dimen/m_left_right"
+        android:layout_marginBottom="87dp"
+        android:isScrollContainer="true"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="Welcome to Haiti \n TAXI APP is an application that offers services in the transport and logistics sectors"
+
+            android:textColor="#FF9800" />
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_above="@id/layoutDots"
+        android:layout_below="@id/iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginBottom="@dimen/space20"
+        android:id="@+id/pager"
+        android:overScrollMode="never"/>
+
+
+
+</RelativeLayout>

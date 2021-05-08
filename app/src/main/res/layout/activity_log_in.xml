@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.uiresource.Taxi_Services.LogIn">
+    <include
+        android:id="@+id/inc_toolbar"
+        layout="@layout/toolbar"
+        android:background="#FF9800"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inc_toolbar"
+        android:layout_marginLeft="@dimen/m_left_right"
+        android:layout_marginTop="@dimen/space20"
+        android:layout_marginRight="@dimen/m_left_right"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            style="@style/ButtonOrange"
+            android:layout_width="299dp"
+            android:layout_height="wrap_content"
+            android:background="@color/design_default_color_surface"
+            android:text="google"
+            android:textColor="#FF9800" />
+
+        <Button
+            style="@style/ButtonNoBg"
+            android:layout_width="297dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:background="@color/design_default_color_surface"
+            android:text="facebook"
+            android:textColor="#3F51B5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:text="or"
+            android:textAllCaps="true"
+            android:textColor="@color/textGray"
+            android:textSize="14sp" />
+
+        <EditText
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:hint="Email"
+            android:inputType="" />
+
+        <EditText
+            style="@style/EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space15"
+            android:textColor="#F4EFEF"
+            android:background="#201D1D"
+            android:text="login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20"
+            android:text="Forgot Password?"
+            android:textColor="@color/textGray"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
